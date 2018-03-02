@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MovieBox</string>
+
+    <string name="movie_vote_average">%s / 10</string>
+    <string name="movie_release_date">Release Date</string>
+    <string name="movie_year">2018</string>
+    <string name="movie_rate">Rate</string>
+    <string name="movie_vote_average_sample">7.9 / 10</string>
+
+    <string name="filter_most_popular">Most Popular</string>
+    <string name="filter_top_rated">Top Rated</string>
+    <string name="filter_favorite">Favorite</string>
+
+    <string name="no_data">No Data</string>
+    <string name="movie_description">Movie Description</string>
+
+    <!--TAG DESCRIPTION-->
+    <string name="movie_header">Movie Header</string>
+    <string name="movie_poster">Movie Poster</string>
+    <string name="movie_image">Movie Image</string>
+    <string name="movie_trailer">Trailer</string>
+    <string name="movie_review">Review</string>
+    <string name="movie_no_review">No Review</string>
+    <string name="movie_no_trailer">No Trailer</string>
+
+    <!--BASE URL-->
+    <string name="youtube_video_thumbnail" translatable="false">https://img.youtube.com/vi/%s/0.jpg</string>
+    <string name="youtube_video_url" translatable="false">https://www.youtube.com/watch?v=%s</string>
+
+    <!--Menu-->
+    <string name="menu_share">Share</string>
+    <string name="content_authority">com.moviebox.app</string>
+</resources>

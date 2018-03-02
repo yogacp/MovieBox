@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:nestedScrollingEnabled="false"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="UnusedAttribute">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/detail_movie_poster"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_marginTop="@dimen/default_padding"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/movie_poster"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="RtlHardcoded"
+            tools:src="@drawable/content_cover" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="@dimen/default_match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_marginRight="@dimen/default_margin"
+            android:layout_marginStart="@dimen/default_margin"
+            android:text="@string/movie_release_date"
+            android:textSize="@dimen/default_header_text_size"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/detail_movie_poster"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/detail_movie_poster" />
+
+        <TextView
+            android:id="@+id/detail_movie_release_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:textSize="@dimen/default_title_text_size"
+            app:layout_constraintLeft_toLeftOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:text="@string/movie_year" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:text="@string/movie_rate"
+            android:textSize="@dimen/default_header_text_size"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@+id/detail_movie_release_date"
+            app:layout_constraintTop_toBottomOf="@+id/detail_movie_release_date" />
+
+        <TextView
+            android:id="@+id/detail_movie_count_average"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:textSize="@dimen/default_title_text_size"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:text="@string/movie_vote_average_sample" />
+
+        <TextView
+            android:id="@+id/detail_movie_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/default_margin"
+            android:layout_marginTop="@dimen/default_margin"
+            android:textSize="@dimen/default_title_text_size"
+            app:layout_constraintLeft_toLeftOf="@+id/detail_movie_poster"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_movie_poster"
+            tools:ignore="RtlHardcoded"
+            tools:text="@string/movie_description" />
+
+        <TextView
+            android:textSize="@dimen/default_header_text_size"
+            android:textStyle="bold"
+            android:layout_width="@dimen/default_match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/movie_trailer"
+            android:layout_marginTop="@dimen/default_margin"
+            app:layout_constraintTop_toBottomOf="@+id/detail_movie_description"
+            app:layout_constraintLeft_toLeftOf="@+id/detail_movie_description"
+            android:id="@+id/textView3" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/detail_movie_movie_trailer_list"
+            android:layout_width="@dimen/default_match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginRight="@dimen/default_margin"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:nestedScrollingEnabled="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:textSize="@dimen/default_header_text_size"
+            android:text="@string/movie_review"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/detail_movie_movie_trailer_list"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/detail_movie_movie_review_list"
+            android:layout_width="@dimen/default_match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/default_padding"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginRight="@dimen/default_margin"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:nestedScrollingEnabled="false"
+            app:layout_constraintLeft_toLeftOf="@+id/textView4"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            tools:ignore="RtlHardcoded" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

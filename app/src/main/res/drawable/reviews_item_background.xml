@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item>
+                <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >
+                    <solid
+                        android:color="@color/colorWhite" />
+
+                    <corners android:radius="@dimen/default_review_item"/>
+
+                    <stroke android:width="2px"
+                        android:color="@color/colorLightGrey" />
+
+                    <padding android:bottom="@dimen/default_review_item"
+                        android:left="@dimen/default_review_item"
+                        android:right="@dimen/default_review_item"
+                        android:top="@dimen/default_review_item" />
+                    <size
+                        android:height="@dimen/default_review_item_height" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>
